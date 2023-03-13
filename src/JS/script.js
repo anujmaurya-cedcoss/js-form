@@ -43,5 +43,8 @@ function status() {
     if(weight > 150) {
         output = "please enter realistic weight";
     }
+    if(weight < 0 || age < 0) {
+        output = "please enter positive values";
+    }
     document.getElementById("output").innerHTML = output;
 }
