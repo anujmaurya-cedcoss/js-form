@@ -38,10 +38,10 @@ function status() {
             output = "overweight";
         }
     } else {
-        output = "Too old for this all thing"
+        output = "Age > 20 isn't considered (as of now)"
     }
     if(weight > 150) {
-        output = "please enter real weight";
+        output = "please enter realistic weight";
     }
     document.getElementById("output").innerHTML = output;
 }
